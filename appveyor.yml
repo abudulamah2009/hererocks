@@ -3,7 +3,6 @@ version: 1.0.{build}
 environment:
   matrix:
   - Python: 35-x64
-  - Python: 27
 
 build_script:
   - PATH %CD%\here\bin;C:\mingw\bin;C:\python%Python%;C:\python%Python%\scripts;%PATH%
