@@ -58,7 +58,7 @@ class TestCLI(unittest.TestCase):
             "hererocks.py", os.path.join("test", location)] + args, expected_output_lines, from_prefix=False)
 
     def test_install_latest_lua_with_luarocks_from_git(self):
-        self.assertHererocksSuccess(["--lua", "latest", "--luarocks", "https://github.com/luarocks/luarocks@6a11f6"])
+        self.assertHererocksSuccess(["--lua", "latest", "--luarocks", "https://github.com/luarocks/luarocks@f162d2ec"])
         self.assertSuccess(["luarocks", "--version"])
 
 if __name__ == '__main__':
